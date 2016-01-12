@@ -26,7 +26,7 @@ npm install
 npm start
 ```
 
-##### To start app, run:
+##### To start app, in a separate terminal window or tab, run:
 ```
 npm run dev
 ```
