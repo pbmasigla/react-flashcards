@@ -25,11 +25,14 @@ npm install
 ```
 npm start
 ```
+then go to http://localhost:3000/
+
 
 ##### To start app, in a separate terminal window or tab, run:
 ```
 npm run dev
 ```
+then go to http://localhost:8080/
 
 ----------
 
