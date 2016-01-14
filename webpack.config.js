@@ -40,11 +40,11 @@ module.exports = {
 	},
 	plugins: [
 		new webpack.ProvidePlugin({
-		React: "react",
+			React: "react",
 			ReactDOM: "react-dom"
 		}),
 		new webpack.optimize.OccurenceOrderPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
-		new webpack.NoErrorsPlugin()
+		new webpack.NoErrorsPlugin(),
 	]
 };
