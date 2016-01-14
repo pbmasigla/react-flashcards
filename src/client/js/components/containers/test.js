@@ -9,7 +9,6 @@ export default class Test extends React.Component {
 		this.state = {
 			name: ""
 		};
-
 		this.handleOnChange = this.handleOnChange.bind(this);
 	}
 
@@ -28,11 +27,11 @@ export default class Test extends React.Component {
 		return(
 			<div className="test__container">
 				<input
-				 ref="myInput"
-				 onChange={ this.handleOnChange } />
+					ref="myInput"
+					onChange={ this.handleOnChange } />
 
 				<TestHeader
-				name={ this.state.name || "friend" }/>
+					name={ this.state.name || "friend" }/>
 
 				<TestFooter />
 			</div>

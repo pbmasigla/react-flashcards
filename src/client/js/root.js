@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Router, Route } from 'react-router';
-import { Test } from "./components/containers";
+import { Test, MyTodos } from "./components/containers";
 import { Provider } from 'react-redux';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
@@ -17,6 +17,7 @@ export default class Root extends React.Component {
 			<Provider store={ store }>
 				<Router history={ history }>
 					<Route path="/" component={ Test } />
+					<Route path="/todos" component={ MyTodos } />
 				</Router>
 			</Provider>
 		);
