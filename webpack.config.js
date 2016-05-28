@@ -5,7 +5,7 @@ var ROOT_PATH = path.resolve(__dirname);
 module.exports = {
 	devtool: "source-map",
 	entry: [
-		path.resolve(ROOT_PATH, "./src/client/js/app.js"),
+		path.resolve(ROOT_PATH, "./src/js/app.js"),
 	],
 	module: {
 		preLoaders: [{
