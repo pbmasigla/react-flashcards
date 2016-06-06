@@ -2,7 +2,7 @@ import "./flashcard-options.scss";
 import questions from "../../../lib/questions";
 import { MultiSelect, SimpleSelect } from "react-selectize";
 import { getSources, getTags, buildOptions } from "../../../lib/helpers/questions-helpers";
-import { updateIndividualOption, updateArrayFilteringOptions } from "../../actions/options";
+import { updateIndividualOption, updateArrayFilteringOptions } from "../../actions/options-actions";
 
 const SORTING_OPTIONS = buildOptions(["ordered", "shuffled"]);
 const VIEW_OPTIONS = buildOptions(["card", "list"]);

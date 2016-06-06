@@ -28,3 +28,14 @@ export const getTags = questions => {
 	});
 	return buildOptions(tags);
 };
+
+export const getFilteredFlashcards = (filteredOptions, allQuestions) => {
+	return allQuestions.reduce((filteredFlashcards, question) => {
+		const containsSource = filteredOptions.sources.length === 0 || filteredOptions.sources.includes(question.source);
+		const containsTags = filteredOptions.tags.length === 0 || filteredOptions.tags.some(tag => question.tags.includes(tag));
+		if (containsSource && containsTags) {
+			filteredFlashcards.push(question);
+		}
+		return filteredFlashcards;
+	}, []);
+};
