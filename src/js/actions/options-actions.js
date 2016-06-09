@@ -1,4 +1,8 @@
-import { UPDATE_INDIVIDUAL_OPTION, UPDATE_ARRAY_FILTERING_OPTIONS } from "../constants";
+import {
+	UPDATE_INDIVIDUAL_OPTION,
+	UPDATE_ARRAY_FILTERING_OPTIONS
+} from "../constants";
+import { resetCurrentCardIndex } from "./ui-actions";
 
 export function updateIndividualOption(field, option) {
 	return (dispatch, getState) => {
@@ -9,6 +13,7 @@ export function updateIndividualOption(field, option) {
 			type: UPDATE_INDIVIDUAL_OPTION,
 			options
 		});
+		dispatch(resetCurrentCardIndex());
 	};
 }
 
@@ -21,5 +26,6 @@ export function updateArrayFilteringOptions(field, selectedOptions) {
 			type: UPDATE_ARRAY_FILTERING_OPTIONS,
 			options: newOptions
 		});
+		dispatch(resetCurrentCardIndex());
 	};
 }

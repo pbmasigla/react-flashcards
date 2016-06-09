@@ -21,6 +21,7 @@
     "react-addons-css-transition-group": "^15.1.0",
     "react-addons-shallow-compare": "^15.1.0",
     "react-dom": "^15.1.0",
+    "react-keydown": "^1.6.1",
     "react-redux": "^4.4.5",
     "react-router": "^2.4.1",
     "react-selectize": "^2.0.2",
@@ -33,6 +34,7 @@
   "devDependencies": {
     "babel-eslint": "^6.0.4",
     "babel-loader": "^6.2.4",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-es2015-loose": "^7.0.0",
     "babel-preset-react": "^6.5.0",
