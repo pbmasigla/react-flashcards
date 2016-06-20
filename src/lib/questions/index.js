@@ -1,4 +1,4 @@
-import crackingTheCode from "./cracking-the-code";
+import crackingTheCode from "./cracking-the-code/index";
 import frontendInterview from "./frontend-interview";
 
-module.exports = [...crackingTheCode, ...frontendInterview];
+module.exports = [...crackingTheCode ];

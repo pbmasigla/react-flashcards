@@ -1,7 +1,7 @@
 {
 	"parser": "babel-eslint",
 	"ecmaFeatures": {
-		"modules": true,
+		"module": true,
 		"jsx": true,
 		"classes": true
 	},
