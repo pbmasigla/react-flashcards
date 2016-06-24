@@ -10,17 +10,17 @@ module.exports = {
 	module: {
 		preLoaders: [{
 			test: /\.js?$/,
-			loaders: ['eslint'],
-			include: path.resolve(ROOT_PATH, 'app')
+			loaders: ["eslint"],
+			include: path.resolve(ROOT_PATH, "app")
 		}],
 		loaders: [{
 			test: /\.js?$/,
 			exclude: /node_modules/,
-			loaders: ['react-hot', 'babel']
+			loaders: ["react-hot", "babel", path.resolve(ROOT_PATH, "./src/lib/helpers/pre-loader.js")]
 		},
 		{
 			test: /\.scss$/,
-			loaders: ['style','css','sass']
+			loaders: ["style","css","sass"]
 		}]
 	},
 	resolve: {

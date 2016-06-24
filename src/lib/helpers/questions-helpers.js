@@ -39,3 +39,17 @@ export const getFilteredFlashcards = (filteredOptions, allQuestions) => {
 		return filteredFlashcards;
 	}, []);
 };
+
+export const buildFlashcardTags = question => {
+	return question.reduce((builtTags, tag, i) => {
+		const TagName = tag.tag;
+		builtTags.push(
+			<TagName
+				key={ Math.random(9999) }
+				className={ tag.class }>
+				{ tag.content }
+			</TagName>
+		);
+		return builtTags;
+	}, []);
+}
