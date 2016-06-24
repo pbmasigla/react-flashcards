@@ -35,7 +35,7 @@ then go to http://localhost:8080/
 ### Overview App Structure
 ```
 ├── build		         // where minified files for browser are compiled to
-├── node_module		// installed packages
+├── node_modules		// installed packages
 ├── src				// main app files
 ├── .babelrc	        // config for babelrc
 ├── webpack.config.js	// config for webpack compilation

@@ -3,7 +3,7 @@ module.exports = {
 		{
 			tag: "div",
 			class: "text-question",
-			content: "Implement an algorithm to determine if a string has all unique characters What if you can not use additional data structures?"
+			content: "Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?"
 		}
 	]),
 	answer: ([
