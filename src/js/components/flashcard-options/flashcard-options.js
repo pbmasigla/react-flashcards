@@ -16,7 +16,7 @@ export default class FlashcardOptions extends React.Component {
 				<div>
 					<label>Sorting</label>
 					<SimpleSelect
-						theme="material"
+						theme="default"
 						placeholder="Select Sorting"
 						options={ SORTING_OPTIONS }
 						defaultValue={ SORTING_OPTIONS[0] }
@@ -25,7 +25,7 @@ export default class FlashcardOptions extends React.Component {
 				<div>
 					<label>View Mode</label>
 					<SimpleSelect
-						theme="material"
+						theme="default"
 						placeholder="Select View Mode"
 						options={ VIEW_OPTIONS }
 						defaultValue={ VIEW_OPTIONS[0] }
@@ -34,7 +34,7 @@ export default class FlashcardOptions extends React.Component {
 				<div>
 					<label>Sources</label>
 					<MultiSelect
-						theme="material"
+						theme="default"
 						placeholder="Select Source(s)"
 						options={ SOURCE_OPTIONS }
 						defaultValue={{ tags: [SOURCE_OPTIONS[0]] }}
@@ -43,7 +43,7 @@ export default class FlashcardOptions extends React.Component {
 				<div>
 					<label>Tags</label>
 					<MultiSelect
-						theme="material"
+						theme="default"
 						placeholder="Select Tag(s)"
 						options={ TAG_OPTIONS }
 						defaultValue={{ tags: [TAG_OPTIONS[0]] }}
