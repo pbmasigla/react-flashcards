@@ -1,10 +1,16 @@
+// Libs
+import keydown from "react-keydown";
 import "./react-flashcards.scss";
 import { connect } from 'react-redux';
+import questions from "../../lib/questions";
+
+// Components
 import FlashcardOptions from "./flashcard-options/flashcard-options";
 import FlashcardView from "./flashcard-view/flashcard-view";
-import questions from "../../lib/questions";
+import QuestionInput from "./question-input/question-input";
+
+// Helpers
 import { getFilteredFlashcards } from "../../lib/helpers/questions-helpers";
-import keydown from "react-keydown";
 import {
 	updateCardSide,
 	getNextCard,
@@ -13,17 +19,20 @@ import {
 
 export default class ReactFlashcards extends React.Component {
 	@keydown(32)
-	flipCard() {
+	flipCard(e) {
+		e.preventDefault();
 		this.props.dispatch(updateCardSide());
 	}
 
 	@keydown([39, 40])
-	nextCard() {
+	nextCard(e) {
+		e.preventDefault();
 		this.props.dispatch(getNextCard(getFilteredFlashcards(this.props.options, questions).length));
 	}
 
 	@keydown([37, 38])
-	previousCard() {
+	previousCard(e) {
+		e.preventDefault();
 		this.props.dispatch(getPreviousCard());
 	}
 
@@ -42,6 +51,10 @@ export default class ReactFlashcards extends React.Component {
 					options={ this.props.options }
 					cardSide={ this.props.ui.cardSide }
 					currentCardIndex={ this.props.ui.currentCardIndex }/>
+				<QuestionInput
+					dispatch={ this.props.dispatch }
+					options={ this.props.options }
+				/>
 			</div>
 		);
 	}
