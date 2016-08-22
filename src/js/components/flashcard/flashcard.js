@@ -1,3 +1,4 @@
+import "./flashcard.scss";
 import Front from "./front/front";
 import Back from "./back/back";
 
@@ -20,7 +21,7 @@ export default class Flashcard extends React.Component {
 		const card = this.props.cardSide === "front" ? frontSide : backSide;
 
 		return (
-			<div>
+			<div className="flashcard-container">
 				{ card }
 			</div>
 		);

@@ -1,0 +1,21 @@
+.flashcard-container {
+	background-color: white;
+	padding: 20px;
+	width: 65%;
+}
+
+.flashcard {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.flashcard--front {
+	.flashcard__header--front {
+	}
+}
+
+.flashcard--back {
+
+}
