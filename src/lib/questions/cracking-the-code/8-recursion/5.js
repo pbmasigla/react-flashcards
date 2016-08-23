@@ -12,12 +12,12 @@ module.exports = {
 		},
 		{
 			tag: "div",
-			class: "text-question",
+			class: "text-question example-sub-item",
 			content: "input: 3 (e.g., 3 pairs of parentheses)"
 		},
 		{
 			tag: "div",
-			class: "text-question",
+			class: "text-question example-sub-item",
 			content: "output: ()()(), ()(()), (())(), ((()))"
 		}
 	]),

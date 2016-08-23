@@ -10,7 +10,12 @@ module.exports = {
 		{
 			tag: "div",
 			class: "text-answer",
-			content: "For simplicity, assume char set is ASCII (if not, we need to increase the storage size. The rest of the logic would be the same).NOTE: This is a great thing to point out to your interviewer!"
+			content: "For simplicity, assume char set is ASCII (if not, we need to increase the storage size. The rest of the logic would be the same). NOTE: This is a great thing to point out to your interviewer!"
+		},
+		{
+			tag: "div",
+			class: "text-answer",
+			content: "NOTE: This is a great thing to point out to your interviewer!"
 		},
 		{
 			tag: "pre",
