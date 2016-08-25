@@ -12,12 +12,12 @@ module.exports = {
 		},
 		{
 			tag: "div",
-			class: "text-question",
+			class: "text-question example-sub-item",
 			content: "Input: (3 -> 1 -> 5) + (5 -> 9 -> 2)"
 		},
 		{
 			tag: "div",
-			class: "text-question",
+			class: "text-question example-sub-item",
 			content: "Output: 8 -> 0 -> 8"
 		}
 	]),

@@ -22,12 +22,12 @@ module.exports = {
 		},
 		{
 			tag: "div",
-			class: "text-question",
-			content: "input: A -> B -> C -> D -> E -> C [the same C as earlier]"
+			class: "text-question example-sub-item",
+			content: "Input: A -> B -> C -> D -> E -> C [the same C as earlier]"
 		},
 		{
 			tag: "div",
-			class: "text-question",
+			class: "text-question example-sub-item",
 			content: "Output: C"
 		}
 	]),

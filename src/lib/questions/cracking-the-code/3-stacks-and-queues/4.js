@@ -7,17 +7,17 @@ module.exports = {
 		},
 		{
 			tag: "div",
-			class: "text-question",
+			class: "text-question list-item",
 			content: "(A) Only one disk can be moved at a time."
 		},
 		{
 			tag: "div",
-			class: "text-question",
+			class: "text-question list-item",
 			content: "(B) A disk is slid off the top of one rod onto the next rod."
 		},
 		{
 			tag: "div",
-			class: "text-question",
+			class: "text-question list-item",
 			content: "(C) A disk can only be placed on top of a larger disk."
 		},
 		{

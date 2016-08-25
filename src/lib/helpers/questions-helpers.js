@@ -1,7 +1,7 @@
 export const buildOptions = options => {
 	return options.map(option => {
 		return {
-			label: option.replace(/-/g, ' ').replace(/\w\S*/g, text => text.charAt(0).toUpperCase() + text.substr(1).toLowerCase()),
+			label: normalizeSinglar(option),
 			value: option
 		}
 	});
@@ -52,4 +52,10 @@ export const buildFlashcardTags = question => {
 		);
 		return builtTags;
 	}, []);
-}
+};
+
+export const normalizeSinglar = data => data.replace(/-/g, ' ').replace(/\w\S*/g, text => text.charAt(0).toUpperCase() + text.substr(1).toLowerCase());
+
+export const normalizeMultiple = options => {
+	return options.map(option => normalizeSinglar(option));
+};

@@ -12,12 +12,12 @@ module.exports = {
 		},
 		{
 			tag: "div",
-			class: "text-question",
+			class: "text-question example-sub-item",
 			content: "Input: the node ‘c’ from the linked list a->b->c->d->e"
 		},
 		{
 			tag: "div",
-			class: "text-question",
+			class: "text-question example-sub-item",
 			content: "Result: nothing is returned, but the new linked list looks like a->b->d->e"
 		}
 	]),

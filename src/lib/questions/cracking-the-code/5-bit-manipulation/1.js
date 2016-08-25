@@ -12,12 +12,12 @@ module.exports = {
 		},
 		{
 			tag: "div",
-			class: "text-question",
+			class: "text-question example-sub-item",
 			content: "Input: N = 10000000000, M = 10101, i = 2, j = 6"
 		},
 		{
 			tag: "div",
-			class: "text-question",
+			class: "text-question example-sub-item",
 			content: "Output: N = 10001010100"
 		}
 	]),

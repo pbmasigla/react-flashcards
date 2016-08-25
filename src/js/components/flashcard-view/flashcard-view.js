@@ -1,3 +1,4 @@
+import "./flashcard-view.scss";
 import Flashcard from "../flashcard/flashcard";
 
 export default class FlashcardView extends React.Component {
@@ -5,7 +6,7 @@ export default class FlashcardView extends React.Component {
 		const currentCard = this.props.filteredFlashcards[this.props.currentCardIndex];
 
 		return (
-			<div>
+			<div className="flashcard-view">
 				<Flashcard
 					cardSide={ this.props.cardSide }
 					question={ currentCard.question }

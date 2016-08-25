@@ -28,12 +28,12 @@ public String makeSentence(String[] words) {
 		{
 			tag: "div",
 			class: "text-answer",
-			content: "Where n is the number of letters in sentence.Here’s why: each time you append a string to sentence, you create a copy of sentence and run through all the letters in sentence to copy them over If you have to iterate through up to n characters each time in the loop, and you’re looping at least n times, that gives you an O(n^2) run time Ouch!"
+			content: "Where n is the number of letters in sentence. Here’s why: each time you append a string to sentence, you create a copy of sentence and run through all the letters in sentence to copy them over If you have to iterate through up to n characters each time in the loop, and you’re looping at least n times, that gives you an O(n^2) run time. Ouch!"
 		},
 		{
 			tag: "div",
 			class: "text-answer",
-			content: "With StringBuffer (or StringBuilder) can help you avoid this problem"
+			content: "With StringBuffer (or StringBuilder) can help you avoid this problem."
 		},
 		{
 			tag: "pre",

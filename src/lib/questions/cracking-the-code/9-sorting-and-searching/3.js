@@ -12,12 +12,12 @@ module.exports = {
 		},
 		{
 			tag: "div",
-			class: "text-question",
+			class: "text-question example-sub-item",
 			content: "Input: find 5 in array (15 16 19 20 25 1 3 4 5 7 10 14)."
 		},
 		{
 			tag: "div",
-			class: "text-question",
+			class: "text-question example-sub-item",
 			content: "Output: 8 (the index of 5 in the array)."
 		}
 	]),

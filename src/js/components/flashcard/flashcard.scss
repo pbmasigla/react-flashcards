@@ -1,0 +1,96 @@
+.flashcard-container {
+	background-color: white;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	border-radius: 2px;
+	color: #566270;
+	padding: 20px;
+	width: 65%;
+}
+
+.flashcard {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+code {
+	font-size: 16px;
+}
+
+.flashcard__header {
+	.bolded {
+		display: inline-block;
+	}
+}
+
+.flashcard__label,
+.text-question,
+.text-answer {
+	display: inline-block;
+	line-height: 23px;
+	margin: 10px 0;
+}
+
+.text-question,
+.text-answer {
+	font-size: 14px;
+}
+
+.flashcard__label {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.code-question,
+.code-answer {
+	background-color: #FBFAF8;
+	border: 1px solid #D5D4D3;
+	border-radius: 4px;
+	display: flex;
+	justify-content: space-around;
+	line-height: 20px;
+	margin: 5px auto;
+}
+
+.italicized {
+	font-style: italic;
+}
+
+.bolded {
+	font-weight: 700;
+	display: block;
+}
+
+.list-item {
+	display: block;
+	margin: 7px 0 7px 10px;
+	font-size: 13px;
+}
+
+.list-sub-item {
+	display: block;
+	font-size: 11px;
+	margin: 7px 0 7px 20px;
+}
+
+.example-sub-item {
+	display: block;
+}
+
+.flashcard__sources {
+	margin-top: 7px;
+}
+
+.flashcard__tags {
+	margin-bottom: 7px;
+}
+
+.flashcard__tags,
+.flashcard__sources {
+	font-size: 13px;
+
+	.flashcard__label {
+		font-size: 13px;
+		margin: 2px 0;
+	}
+}
